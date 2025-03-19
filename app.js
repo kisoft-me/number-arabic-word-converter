@@ -142,6 +142,12 @@ if (Scale) {                                                                // A
 return Words999; //Return the Triple in Words
 }
 }
+
+process.on('SIGINT', function() {
+    console.log("Caught interrupt signal");
+    process.exit();
+});
+
 app.use(bodyParser.json());
 
 app.post('/convert', (req, res) => {
