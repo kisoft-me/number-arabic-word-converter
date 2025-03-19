@@ -153,7 +153,7 @@ app.post('/convert', (req, res) => {
 	}
 	let options = req.body.options??{}
 	let numberText = nArabicWords(number, options)
-	let result = {"number":number, "numberText": numberText, "options":"options"};
+	let result = {"number":number, "numberText": numberText, "options":options};
 	res.status(200);
 	res.send(result);
 
