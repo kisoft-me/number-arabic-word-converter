@@ -4,9 +4,9 @@ when:
 
 steps:
   - name: build
-    image: woodpeckerci/plugin-docker-buildx
+    image: woodpeckerci/plugin-docker-buildx:6.0.0
     settings:
-    repo: woodpeckerci/woodpecker-agent
+    repo: kisoft/number-arabic-word-converter
     dockerfile: dockerfile
     tag: latest
     username:
