@@ -1,5 +1,7 @@
 # Number Arabic Word Converter
 
+[![status-badge](https://ci.kisoft.me/api/badges/2/status.svg)](https://ci.kisoft.me/repos/2)
+
 A simple JSON API to convert numbers(integers) into their correct arabic text. 
 Based on https://github.com/MohsenAlyafei/nArabicWords.
 
