@@ -1,0 +1,15 @@
+when:
+  - event: push
+    branch: master
+
+steps:
+  - name: build
+    image: woodpeckerci/plugin-docker-buildx
+    settings:
+    repo: woodpeckerci/woodpecker-agent
+    dockerfile: dockerfile
+    tag: latest
+    username:
+      from_secret: DOCKER_HUB_USERNAME
+    password:
+      from_secret: DOCKER_HUB_ACCESS_TOKEN
