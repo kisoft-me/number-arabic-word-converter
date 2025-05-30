@@ -6,10 +6,10 @@ steps:
   - name: build
     image: woodpeckerci/plugin-docker-buildx:6.0.0
     settings:
-    repo: kisoft/number-arabic-word-converter
-    dockerfile: dockerfile
-    tag: latest
-    username:
-      from_secret: DOCKER_HUB_USERNAME
-    password:
-      from_secret: DOCKER_HUB_ACCESS_TOKEN
+      repo: kisoft/number-arabic-word-converter
+      dockerfile: dockerfile
+      tag: latest
+      username:
+        from_secret: DOCKER_HUB_USERNAME
+      password:
+        from_secret: DOCKER_HUB_ACCESS_TOKEN
